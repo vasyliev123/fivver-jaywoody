@@ -161,7 +161,7 @@ async def main7():
     print(groups)      
     for group in groups:
         try:
-            await client7.send_message(group, '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
+            await client7.send_file(group,'pic7.jpg', caption =  '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
             '\n'+
             '-We have been working with top models for 2 years now and are a quality agency ✅\n'+
             "-Only focus on a few pages at a time to maximize your PPV/earnings/ and fans. Proof of work can be shown and can start right away🔥")
