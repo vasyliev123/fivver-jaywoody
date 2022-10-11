@@ -134,7 +134,7 @@ async def main5():
     print(groups)      
     for group in groups:
         try:
-            await client5.send_file(group,'pic5.jpg',caption='!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
+            await client5.send_message(group,'!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
             '\n'+
             '-Recover any account within 0-60 minutes✅\n'+
             "-Only need your @ 🙏\n"+
@@ -161,7 +161,7 @@ async def main7():
     print(groups)      
     for group in groups:
         try:
-            await client7.send_file(group,'pic7.jpg', caption =  '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
+            await client7.send_message(group,'-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
             '\n'+
             '-We have been working with top models for 2 years now and are a quality agency ✅\n'+
             "-Only focus on a few pages at a time to maximize your PPV/earnings/ and fans. Proof of work can be shown and can start right away🔥")
@@ -184,15 +184,13 @@ def init():
     
     with client6:
         client6.loop.run_until_complete(main6())
-    
-def init1():
     with client5:
         client5.loop.run_until_complete(main5())
     with client7:
         client7.loop.run_until_complete(main7())
 
 schedule.every().hour.do(init)
-schedule.every(15).minutes.do(init1)
+
 while True:
     try:
         schedule.run_pending()
