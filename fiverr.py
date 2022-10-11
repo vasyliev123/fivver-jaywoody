@@ -188,7 +188,7 @@ def init():
     with client7:
         client7.loop.run_until_complete(main7())
 
-schedule.every().minute.do(init)
+schedule.every(30).minutes.do(init)
 
 while True:
     try:
