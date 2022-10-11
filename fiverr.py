@@ -11,7 +11,6 @@ client4 = TelegramClient('anon4', api_id, api_hash)
 client5 = TelegramClient('anon5', api_id, api_hash)
 client6 = TelegramClient('anon6', api_id, api_hash)
 client7= TelegramClient('anon7', api_id, api_hash)
-client7.flood_sleep_threshold(300)
 async def main1():
 
     #FIVERR001
@@ -145,7 +144,7 @@ async def main5():
             '@tashababe69❤️‍🔥\n'+
             '@tashababe69❤️‍🔥')
             print("message sent to group" + str(group))
-            time.sleep(1)
+            time.sleep(60)
             a = a +1
         except Exception as er:
             print(er)
@@ -162,12 +161,12 @@ async def main7():
     print(groups)      
     for group in groups:
         try:
-            await client7.send_file () (group,'pic7.jpg', caption =  '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
+            await client7.send_file(group,'pic7.jpg', caption =  '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
             '\n'+
             '-We have been working with top models for 2 years now and are a quality agency ✅\n'+
             "-Only focus on a few pages at a time to maximize your PPV/earnings/ and fans. Proof of work can be shown and can start right away🔥")
             print("message sent to group" + str(group))
-            time.sleep(1)
+            time.sleep(60)
         except Exception as er:
     
             print(er)
