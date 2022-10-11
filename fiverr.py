@@ -168,7 +168,7 @@ async def main7():
             print("message sent to group" + str(group))
             time.sleep(1)
         except Exception as er:
-            time.sleep(er.TimeToWait)
+    
             print(er)
        
 
