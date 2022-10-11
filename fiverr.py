@@ -133,7 +133,7 @@ async def main5():
     print(groups)      
     for group in groups:
         try:
-            if a%4==0:
+            if a%3==0:
                 time.sleep(301)
             await client5.send_file(group, 'pic5.jpg',caption = '!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
             '\n'+
@@ -162,7 +162,7 @@ async def main7():
     print(groups)      
     for group in groups:
         try:
-            if a%6==0:
+            if a%5==0:
                 time.sleep(301)
             await client7.send_file(group, 'pic7.jpg',caption = '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
             '\n'+
