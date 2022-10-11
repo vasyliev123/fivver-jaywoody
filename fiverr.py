@@ -133,9 +133,7 @@ async def main5():
     print(groups)      
     for group in groups:
         try:
-            if a%3==0:
-                time.sleep(301)
-            await client5.send_file(group, 'pic5.jpg',caption = '!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
+            await client5.send_message(group,'!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
             '\n'+
             '-Recover any account within 0-60 minutes✅\n'+
             "-Only need your @ 🙏\n"+
@@ -154,7 +152,6 @@ async def main5():
 async def main7():
     #FIVERR007
     groups = []
-    a = 1
     async for dialog in client7.iter_dialogs():
         if(dialog.id < 0):
                 print(dialog.name)
@@ -162,15 +159,12 @@ async def main7():
     print(groups)      
     for group in groups:
         try:
-            if a%5==0:
-                time.sleep(301)
-            await client7.send_file(group, 'pic7.jpg',caption = '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
+            await client7.send_message(group, '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
             '\n'+
             '-We have been working with top models for 2 years now and are a quality agency ✅\n'+
             "-Only focus on a few pages at a time to maximize your PPV/earnings/ and fans. Proof of work can be shown and can start right away🔥")
             print("message sent to group" + str(group))
             time.sleep(1)
-            a = a +1
         except Exception as er:
             print(er)
        
@@ -191,7 +185,7 @@ def init():
     with client7:
         client7.loop.run_until_complete(main7())
 
-schedule.every().hour.do(init)
+schedule.every(30).minutes.do(init)
 
 while True:
     try:
