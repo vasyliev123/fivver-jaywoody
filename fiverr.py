@@ -96,33 +96,6 @@ async def main4():
         except Exception as er:
             print(er)
 
-async def main5():
-    #FIVERR005
-    groups = []
-    a = 0
-    async for dialog in client5.iter_dialogs():
-        if(dialog.id < 0):
-                print(dialog.name)
-                groups.append(dialog.id)
-    print(groups)      
-    for group in groups:
-        try:
-            if a%5==0:
-                time.sleep(301)
-            await client5.send_file(group, 'pic5.jpg',caption = '!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
-            '\n'+
-            '-Recover any account within 0-60 minutes✅\n'+
-            "-Only need your @ 🙏\n"+
-            '-All types of ban reasons except perm bans 🔨\n'+
-            'Send me a message\n'+
-            '@tashababe69❤️‍🔥\n'+
-            '@tashababe69❤️‍🔥\n'+
-            '@tashababe69❤️‍🔥')
-            print("message sent to group" + str(group))
-            time.sleep(1)
-            a = a +1
-        except Exception as er:
-            print(er)
 
 async def main6():
     #FIVERR006
@@ -149,10 +122,39 @@ async def main6():
         except Exception as er:
             print(er)
 
+async def main5():
+    #FIVERR005
+    groups = []
+    a = 1
+    async for dialog in client5.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        try:
+            if a%4==0:
+                time.sleep(301)
+            await client5.send_file(group, 'pic5.jpg',caption = '!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
+            '\n'+
+            '-Recover any account within 0-60 minutes✅\n'+
+            "-Only need your @ 🙏\n"+
+            '-All types of ban reasons except perm bans 🔨\n'+
+            'Send me a message\n'+
+            '@tashababe69❤️‍🔥\n'+
+            '@tashababe69❤️‍🔥\n'+
+            '@tashababe69❤️‍🔥')
+            print("message sent to group" + str(group))
+            time.sleep(1)
+            a = a +1
+        except Exception as er:
+            print(er)
+
+
 async def main7():
     #FIVERR007
     groups = []
-    a = 0
+    a = 1
     async for dialog in client7.iter_dialogs():
         if(dialog.id < 0):
                 print(dialog.name)
@@ -160,7 +162,7 @@ async def main7():
     print(groups)      
     for group in groups:
         try:
-            if a%5==0:
+            if a%6==0:
                 time.sleep(301)
             await client7.send_file(group, 'pic7.jpg',caption = '-If you are looking for someone to manage and grow your page please DM me 🙏\n'+
             '\n'+
