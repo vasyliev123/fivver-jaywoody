@@ -82,16 +82,15 @@ async def main4():
     print(groups)      
     for group in groups:
         try:
-            await client4.send_message(group, '!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
-            '\n'+
-            '-Recover any account within 0-60 minutes✅\n'+
-            "-Only need your @ 🙏\n"+
-            '-All types of ban reasons except perm bans 🔨\n'+
-            '-100% vetted and guaranteed to work💖\n'+
-            '-Any account size🔥\n'+
-            '-MM accepted❕\n'+
-            '\n'+
-            '-Plenty of testimonials and proof of work Just message me for more info🙌')
+            await client4.send_message(group, "💰 ONLYFANS MANAGEMENT 💰"+
+            "Hey babes we are looking for new models for OF management to be a part of our team. We work with girls 1% and lower and will help them get to their goals 🥅\n"+
+
+            "We will do FULL PAGE management such as handling PPV Messages and S4S etc as well as advertising.\n"+
+
+            "Proof of work can be shown ✅\n"+
+            "Only take a small % 💵\n"+
+            "Over 3 years experience with 1"+"%"+" and lower models 🔥\n"+
+            "DM me if you have any questions 💜")
             print("message sent to group" + str(group))
             time.sleep(1)
         except Exception as er:
@@ -189,7 +188,7 @@ def init():
     with client7:
         client7.loop.run_until_complete(main7())
 
-schedule.every().hour.do(init)
+schedule.every(10).minutes.do(init)
 
 while True:
     try:
@@ -198,3 +197,11 @@ while True:
         print(er)
     
     time.sleep(1)
+
+#1  7787880215
+#2  236 877 4531
+#3  617 469 3954 
+#4  604 861 7357
+#5  716 815 6028
+#6  778 320 9995
+#7  6058469310
