@@ -11,6 +11,7 @@ client4 = TelegramClient('anon4', api_id, api_hash)
 client5 = TelegramClient('anon5', api_id, api_hash)
 client6 = TelegramClient('anon6', api_id, api_hash)
 client7= TelegramClient('anon7', api_id, api_hash)
+client8= TelegramClient('anon8', api_id, api_hash)
 async def main1():
 
     #FIVERR001
@@ -143,7 +144,7 @@ async def main5():
             '@tashababe69❤️‍🔥\n'+
             '@tashababe69❤️‍🔥')
             print("message sent to group" + str(group))
-            time.sleep(10)
+            time.sleep(1)
             a = a +1
         except Exception as er:
             print(er)
@@ -165,11 +166,36 @@ async def main7():
             '-We have been working with top models for 2 years now and are a quality agency ✅\n'+
             "-Only focus on a few pages at a time to maximize your PPV/earnings/ and fans. Proof of work can be shown and can start right away🔥")
             print("message sent to group" + str(group))
-            time.sleep(10)
+            time.sleep(1)
         except Exception as er:
     
             print(er)
-       
+async def main8():
+    #FIVERR007
+    
+    groups = []
+    async for dialog in client8.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        try:
+            await client7.send_message(group,"‼️CHEAPEST UNBAN INSTAGRAM ACCOUNT SERVICE‼️\n"+
+            "\n"+
+            "-Recover any account within minutes✅\n"+
+            "-Only need your @ 🙏\n"+
+            "-All types of ban reasons except perm bans 🔨\n"+
+            "-100% guaranteed\n"+
+            "-Can pay AFTER\n"+
+            "-Cheapest bans on the market\n"+
+            "-Any account size🔥\n"+
+            "-MM accepted❕")
+            print("message sent to group" + str(group))
+            time.sleep(1)
+        except Exception as er:
+    
+            print(er)     
 
 def init():   
     with client1:
@@ -187,6 +213,8 @@ def init():
         client5.loop.run_until_complete(main5())
     with client7:
         client7.loop.run_until_complete(main7())
+    with client8:
+        client8.loop.run_until_complete(main8())
 
 schedule.every().hour.do(init)
 
