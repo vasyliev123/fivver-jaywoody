@@ -165,7 +165,7 @@ async def main7():
             '-We have been working with top models for 2 years now and are a quality agency ✅\n'+
             "-Only focus on a few pages at a time to maximize your PPV/earnings/ and fans. Proof of work can be shown and can start right away🔥")
             print("message sent to group" + str(group))
-            time.sleep(60)
+            time.sleep(10)
         except Exception as er:
     
             print(er)
@@ -188,7 +188,7 @@ def init():
     with client7:
         client7.loop.run_until_complete(main7())
 
-schedule.every(10).minutes.do(init)
+schedule.every().hour.do(init)
 
 while True:
     try:
