@@ -143,7 +143,7 @@ async def main5():
             '@tashababe69❤️‍🔥\n'+
             '@tashababe69❤️‍🔥')
             print("message sent to group" + str(group))
-            time.sleep(60)
+            time.sleep(10)
             a = a +1
         except Exception as er:
             print(er)
