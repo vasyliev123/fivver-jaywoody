@@ -213,10 +213,13 @@ def init():
         client5.loop.run_until_complete(main5())
     with client7:
         client7.loop.run_until_complete(main7())
+
+def init2():
     with client8:
         client8.loop.run_until_complete(main8())
 
 schedule.every().hour.do(init)
+schedule.every(90).minutes.do(init2)
 
 while True:
     try:
@@ -226,10 +229,11 @@ while True:
     
     time.sleep(1)
 
-#1  7787880215
+#1  778 788 0215
 #2  236 877 4531
 #3  617 469 3954 
 #4  604 861 7357
 #5  716 815 6028
 #6  778 320 9995
-#7  6058469310
+#7  605 846 9310
+#8  276 258 9713
