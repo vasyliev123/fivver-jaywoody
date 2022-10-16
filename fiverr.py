@@ -83,15 +83,11 @@ async def main4():
     print(groups)      
     for group in groups:
         try:
-            await client4.send_message(group, "💰 ONLYFANS MANAGEMENT 💰"+
-            "Hey babes we are looking for new models for OF management to be a part of our team. We work with girls 1% and lower and will help them get to their goals 🥅\n"+
-
-            "We will do FULL PAGE management such as handling PPV Messages and S4S etc as well as advertising.\n"+
-
-            "Proof of work can be shown ✅\n"+
-            "Only take a small % 💵\n"+
-            "Over 3 years experience with 1"+"%"+" and lower models 🔥\n"+
-            "DM me if you have any questions 💜")
+            await client4.send_file(group, 'pic4.png', caption= 
+            "Please dm me if interested‼️\n"+
+            "-unban quick⏩\n"+
+            "-just need your @ and screen record of you logging in👇\n"+
+            "-cheapest unban services 💰")
             print("message sent to group" + str(group))
             time.sleep(1)
         except Exception as er:
@@ -204,8 +200,7 @@ def init():
         client2.loop.run_until_complete(main2())
     with client3:
         client3.loop.run_until_complete(main3())
-    with client4:
-        client4.loop.run_until_complete(main4())
+    
     
     with client6:
         client6.loop.run_until_complete(main6())
@@ -213,6 +208,9 @@ def init():
         client5.loop.run_until_complete(main5())
     with client7:
         client7.loop.run_until_complete(main7())
+
+    with client4:
+        client4.loop.run_until_complete(main4())
 
 def init2():
     with client8:
