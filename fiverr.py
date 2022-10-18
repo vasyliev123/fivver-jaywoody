@@ -194,8 +194,8 @@ async def main8():
             print(er)     
 
 def init():   
-    with client1:
-        client1.loop.run_until_complete(main1())
+    # with client1:
+    #     client1.loop.run_until_complete(main1())
     with client2:
         client2.loop.run_until_complete(main2())
     with client3:
@@ -216,8 +216,12 @@ def init2():
     with client8:
         client8.loop.run_until_complete(main8())
 
+def init3():
+    with client1:
+        client1.loop.run_until_complete(main1())
 schedule.every().hour.do(init)
 schedule.every(90).minutes.do(init2)
+schedule.every(45).minutes.do(init3)
 
 while True:
     try:
