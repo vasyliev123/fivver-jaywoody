@@ -168,7 +168,7 @@ async def main7():
     
             print(er)
 async def main8():
-    #FIVERR007
+    #FIVERR008
     
     groups = []
     async for dialog in client8.iter_dialogs():
@@ -178,16 +178,16 @@ async def main8():
     print(groups)      
     for group in groups:
         try:
-            await client8.send_message(group,"‼️CHEAPEST UNBAN INSTAGRAM ACCOUNT SERVICE‼️\n"+
+            await client8.send_message(group,
+            "💰 ONLYFANS MANAGEMENT 💰\n"+
+            "we are looking for new models for OF management. We work with girls 1% and lower.\n"+
             "\n"+
-            "-Recover any account within minutes✅\n"+
-            "-Only need your @ 🙏\n"+
-            "-All types of ban reasons except perm bans 🔨\n"+
-            "-100% guaranteed\n"+
-            "-Can pay AFTER\n"+
-            "-Cheapest bans on the market\n"+
-            "-Any account size🔥\n"+
-            "-MM accepted❕")
+            "We will do FULL PAGE management such as handling PPV Messages and S4S etc as well as advertising. Please\n"+
+            "\n"+
+            "Proof of work can be shown ✅\n"+
+            "Only take a small % 💵\n"+
+            "Over 2 years experience with 1% and lower models 🔥\n"+
+            "DM me if you have any questions 💜")
             print("message sent to group" + str(group))
             time.sleep(1)
         except Exception as er:
