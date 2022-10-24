@@ -182,7 +182,7 @@ async def main8():
             "💰 ONLYFANS MANAGEMENT 💰\n"+
             "we are looking for new models for OF management. We work with girls 1% and lower.\n"+
             "\n"+
-            "We will do FULL PAGE management such as handling PPV Messages and S4S etc as well as advertising. Please\n"+
+            "We will do FULL PAGE management such as handling PPV Messages and S4S etc as well as advertising.\n"+
             "\n"+
             "Proof of work can be shown ✅\n"+
             "Only take a small % 💵\n"+
