@@ -105,15 +105,16 @@ async def main6():
     for group in groups:
         try:
             if group != -1001859762702:
-                await client6.send_file(group, 'pic6.jpg',caption = '!!UNBAN ANY INSTAGRAM ACCOUNT!!\n'+
-                '\n'+
-                '-Recover any account within 0-60 minutes✅\n'+
-                "-Only need your @ 🙏\n"+
-                '-All types of ban reasons except perm bans 🔨\n'+
-                '-Negotiable prices💰\n'+
-                'Send me a message\n'+
-                '@baddiprincess❤️‍🔥\n'+
-                '@baddiprincess❤️‍🔥')
+                await client6.send_file(group, 'pic6.jpg',caption = "-unban any of the above\n"+
+                "-Most fair prices ‼️\n"+
+                "-quick services⚡️\n"+
+                "-100% guaranteed or money back✅\n"+
+                "\n"+
+                "Requirements\n"+
+                "-send all info including @\n"+
+                "-reason for ban\n"+
+                "-screenshots of log in page\n"+
+                "-followers count etc")
                 print("message sent to group" + str(group))
                 time.sleep(1)
         except Exception as er:
