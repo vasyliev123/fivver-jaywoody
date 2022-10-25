@@ -179,16 +179,7 @@ async def main8():
     print(groups)      
     for group in groups:
         try:
-            await client8.send_message(group,
-            "💰 ONLYFANS MANAGEMENT 💰\n"+
-            "we are looking for new models for OF management. We work with girls 1% and lower.\n"+
-            "\n"+
-            "We will do FULL PAGE management such as handling PPV Messages and S4S etc as well as advertising.\n"+
-            "\n"+
-            "Proof of work can be shown ✅\n"+
-            "Only take a small % 💵\n"+
-            "Over 2 years experience with 1% and lower models 🔥\n"+
-            "DM me if you have any questions 💜")
+            await client8.send_file(group, 'pic6.jpg')
             print("message sent to group" + str(group))
             time.sleep(1)
         except Exception as er:
