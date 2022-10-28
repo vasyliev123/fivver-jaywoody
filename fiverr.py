@@ -13,6 +13,8 @@ client6 = TelegramClient('anon6', api_id, api_hash)
 client7= TelegramClient('anon7', api_id, api_hash)
 client8= TelegramClient('anon8', api_id, api_hash)
 client9= TelegramClient('anon9', api_id, api_hash)
+
+client10= TelegramClient('anon10', api_id, api_hash)
 async def main1():
 
     #FIVERR001
@@ -202,6 +204,23 @@ async def main9():
             time.sleep(1)
         except Exception as er:
     
+            print(er)  
+async def main10():
+    #FIVERR010
+    
+    groups = []
+    async for dialog in client10.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        try:
+            await client10.send_file(group, 'pic6.jpg',caption="Please dm me for more info🙏 please make sure to include all of the requirements❤️" )
+            print("message sent to group" + str(group))
+            time.sleep(1)
+        except Exception as er:
+    
             print(er)   
 
 def init():   
@@ -225,6 +244,8 @@ def init():
     
     with client9:
         client9.loop.run_until_complete(main9())
+    with client10:
+        client10.loop.run_until_complete(main10())
 
 def init2():
     with client8:
