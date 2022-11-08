@@ -15,6 +15,8 @@ client8= TelegramClient('anon8', api_id, api_hash)
 client9= TelegramClient('anon9', api_id, api_hash)
 
 client10= TelegramClient('anon10', api_id, api_hash)
+client11= TelegramClient('anon11', api_id, api_hash)
+
 async def main1():
 
     #FIVERR001
@@ -222,7 +224,31 @@ async def main10():
         except Exception as er:
     
             print(er)   
-
+async def main11():
+    #FIVERR010
+    
+    groups = []
+    async for dialog in client11.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        try:
+            await client11.send_message(group, 
+"🔥BUYING ONLYFANS FREE ACCOUNTS 🔥\n"+
+"\n"+
+"Hey babes if anyone has an account on of they do not ever use but maybe want to sell it please DM me 🙏 💰\n"+
+"\n"+
+"I am looking to buy free pages with at least 50k followers and up. ( if you have less you can dm me as well)\n"+
+"\n"+
+"This is legit- we are just growing pages and networking so using accounts that girls are not using is a benefit to us and to the model (gets paid)💴 Please message me 🌟"
+ )
+            print("message sent to group" + str(group))
+            time.sleep(1)
+        except Exception as er:
+    
+            print(er)  
 def init():   
     # with client1:
     #     client1.loop.run_until_complete(main1())
@@ -246,6 +272,8 @@ def init():
         client9.loop.run_until_complete(main9())
     with client10:
         client10.loop.run_until_complete(main10())
+    with client11:
+        client11.loop.run_until_complete(main11())
 
 def init2():
     with client8:
