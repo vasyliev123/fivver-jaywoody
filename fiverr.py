@@ -235,15 +235,14 @@ async def main11():
     print(groups)      
     for group in groups:
         try:
-            await client11.send_message(group, 
-"🔥BUYING ONLYFANS FREE ACCOUNTS 🔥\n"+
-"\n"+
-"Hey babes if anyone has an account on of they do not ever use but maybe want to sell it please DM me 🙏 💰\n"+
-"\n"+
-"I am looking to buy free pages with at least 50k followers and up. ( if you have less you can dm me as well)\n"+
-"\n"+
-"This is legit- we are just growing pages and networking so using accounts that girls are not using is a benefit to us and to the model (gets paid)💴 Please message me 🌟"
- )
+            await client11.send_file(group, 'pic1.jpg',
+"DM me to book🥰\n"+
+"-booking asap🙏\n"+
+"-all organic followers from socials🔥\n"+
+"-posted more than once per day ✨\n"+
+"DM ME"
+
+)
             print("message sent to group" + str(group))
             time.sleep(1)
         except Exception as er:
@@ -272,8 +271,7 @@ def init():
         client9.loop.run_until_complete(main9())
     with client10:
         client10.loop.run_until_complete(main10())
-    with client11:
-        client11.loop.run_until_complete(main11())
+   
 
 def init2():
     with client8:
@@ -282,6 +280,8 @@ def init2():
 def init3():
     with client1:
         client1.loop.run_until_complete(main1())
+    with client11:
+        client11.loop.run_until_complete(main11())
 schedule.every().hour.do(init)
 schedule.every(90).minutes.do(init2)
 schedule.every(45).minutes.do(init3)
