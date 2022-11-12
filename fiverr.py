@@ -235,14 +235,11 @@ async def main11():
     print(groups)      
     for group in groups:
         try:
-            await client11.send_file(group, 'pic1.jpg',
-"DM me to book🥰\n"+
-"-booking asap🙏\n"+
-"-all organic followers from socials🔥\n"+
-"-posted more than once per day ✨\n"+
-"DM ME"
-
-)
+            await client11.send_file(group, 'pic1.jpg',caption="DM me to book🥰\n"+
+                                            "-booking asap🙏\n"+
+                                            "-all organic followers from socials🔥\n"+
+                                            "-posted more than once per day ✨\n"+
+                                            "DM ME")
             print("message sent to group" + str(group))
             time.sleep(1)
         except Exception as er:
@@ -284,7 +281,7 @@ def init3():
         client11.loop.run_until_complete(main11())
 # schedule.every().hour.do(init)
 # schedule.every(90).minutes.do(init2)
-schedule.every(10).minutes.do(init3)
+schedule.every(2).minutes.do(init3)
 
 while True:
     try:
