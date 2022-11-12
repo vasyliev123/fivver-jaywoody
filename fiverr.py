@@ -241,7 +241,7 @@ async def main11():
                                             "-posted more than once per day ✨\n"+
                                             "DM ME")
             print("message sent to group" + str(group))
-            time.sleep(1)
+            time.sleep(10)
         except Exception as er:
     
             print(er)  
@@ -281,7 +281,7 @@ def init3():
         client11.loop.run_until_complete(main11())
 # schedule.every().hour.do(init)
 # schedule.every(90).minutes.do(init2)
-schedule.every(2).minutes.do(init3)
+schedule.every(45).minutes.do(init3)
 
 while True:
     try:
