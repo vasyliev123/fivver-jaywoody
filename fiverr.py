@@ -185,7 +185,7 @@ async def main8():
         try:
             await client8.send_file(group, 'pic6.jpg')
             print("message sent to group" + str(group))
-            time.sleep(1)
+            time.sleep(60)
         except Exception as er:
     
             print(er)   
@@ -203,7 +203,7 @@ async def main9():
         try:
             await client9.send_file(group, 'pic6.jpg' )
             print("message sent to group" + str(group))
-            time.sleep(1)
+            time.sleep(60)
         except Exception as er:
     
             print(er)  
@@ -220,7 +220,7 @@ async def main10():
         try:
             await client10.send_file(group, 'pic6.jpg',caption="Please dm me for more info🙏 please make sure to include all of the requirements❤️" )
             print("message sent to group" + str(group))
-            time.sleep(1)
+            time.sleep(60)
         except Exception as er:
     
             print(er)   
@@ -241,7 +241,7 @@ async def main11():
                                             "-posted more than once per day ✨\n"+
                                             "DM ME")
             print("message sent to group" + str(group))
-            time.sleep(10)
+            time.sleep(60)
         except Exception as er:
     
             print(er)  
