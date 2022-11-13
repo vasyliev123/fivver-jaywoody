@@ -279,8 +279,8 @@ def init3():
     #     client1.loop.run_until_complete(main1())
     with client11:
         client11.loop.run_until_complete(main11())
-# schedule.every().hour.do(init)
-# schedule.every(90).minutes.do(init2)
+schedule.every().hour.do(init)
+schedule.every(90).minutes.do(init2)
 schedule.every(45).minutes.do(init3)
 
 while True:
