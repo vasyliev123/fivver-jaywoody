@@ -113,6 +113,7 @@ async def main6():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
+        time.sleep(60)
         try:
             if group != -1001859762702:
                 await client6.send_file(group, 'pic6.jpg',caption = "-unban any of the above\n"+
@@ -126,7 +127,7 @@ async def main6():
                 "-screenshots of log in page\n"+
                 "-followers count etc")
                 print("message sent to group" + str(group))
-                time.sleep(1)
+                 
         except Exception as er:
             print(er)
 
@@ -188,10 +189,12 @@ async def main8():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
+        time.sleep(60)
         try:
+            
             await client8.send_file(group, 'pic6.jpg')
             print("message sent to group" + str(group))
-            time.sleep(60)
+             
         except Exception as er:
     
             print(er)   
@@ -206,10 +209,11 @@ async def main9():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
+        time.sleep(60)
         try:
             await client9.send_file(group, 'pic6.jpg' )
             print("message sent to group" + str(group))
-            time.sleep(60)
+             
         except Exception as er:
     
             print(er)  
@@ -224,10 +228,11 @@ async def main10():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
+        time.sleep(60)
         try:
             await client10.send_file(group, 'pic6.jpg',caption="Please dm me for more info🙏 please make sure to include all of the requirements❤️" )
             print("message sent to group" + str(group))
-            time.sleep(60)
+            
         except Exception as er:
     
             print(er)   
@@ -241,6 +246,7 @@ async def main11():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
+        time.sleep(60)
         try:
             await client11.send_file(group, 'pic1.jpg',caption="DM me to book🥰\n"+
                                             "-booking asap🙏\n"+
@@ -248,7 +254,7 @@ async def main11():
                                             "-posted more than once per day ✨\n"+
                                             "DM ME")
             print("message sent to group" + str(group))
-            time.sleep(60)
+            
         except Exception as er:
     
             print(er)  
