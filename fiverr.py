@@ -20,6 +20,7 @@ client11= TelegramClient('anon11', api_id, api_hash)
 async def main1():
 
     #FIVERR001
+    print("CLIENT 1 IS RUNNING")
     groups = []
     async for dialog in client1.iter_dialogs():
         if(dialog.id < 0):
@@ -35,6 +36,7 @@ async def main1():
 
 async def main2():
     #FIVERR002
+    print("CLIENT 2 IS RUNNING")
     groups = []
     async for dialog in client2.iter_dialogs():
         if(dialog.id < 0):
@@ -61,6 +63,7 @@ async def main2():
 async def main3():    
     #FIVERR003
     groups = []
+    print("CLIENT 3 IS RUNNING")
     async for dialog in client3.iter_dialogs():
         if(dialog.id < 0):
                 print(dialog.name)
@@ -81,6 +84,7 @@ async def main3():
 async def main4():
     #FIVERR004
     groups = []
+    print("CLIENT 4 IS RUNNING")
     async for dialog in client4.iter_dialogs():
         if(dialog.id < 0):
                 print(dialog.name)
@@ -101,6 +105,7 @@ async def main4():
 
 async def main6():
     #FIVERR006
+    print("CLIENT 6 IS RUNNING")
     groups = []
     async for dialog in client6.iter_dialogs():
         if(dialog.id < 0):
@@ -127,6 +132,7 @@ async def main6():
 
 async def main5():
     #FIVERR005
+    print("CLIENT 5 RUNNING")
     groups = []
     a = 1
     async for dialog in client5.iter_dialogs():
@@ -154,7 +160,7 @@ async def main5():
 
 async def main7():
     #FIVERR007
-    
+    print("CLIENT 7 IS RUNNING")
     groups = []
     async for dialog in client7.iter_dialogs():
         if(dialog.id < 0):
@@ -174,7 +180,7 @@ async def main7():
             print(er)
 async def main8():
     #FIVERR008
-    
+    print("CLIENT 8 IS RUNNING")
     groups = []
     async for dialog in client8.iter_dialogs():
         if(dialog.id < 0):
@@ -192,7 +198,7 @@ async def main8():
 
 async def main9():
     #FIVERR009
-    
+    print("CLIENT 9 IS RUNNING")
     groups = []
     async for dialog in client9.iter_dialogs():
         if(dialog.id < 0):
@@ -209,7 +215,8 @@ async def main9():
             print(er)  
 async def main10():
     #FIVERR010
-    
+    print("CLIENT 10 IS RUNNING")
+
     groups = []
     async for dialog in client10.iter_dialogs():
         if(dialog.id < 0):
@@ -226,7 +233,7 @@ async def main10():
             print(er)   
 async def main11():
     #FIVERR010
-    
+    print("CLIENT11 IS RUNNING")
     groups = []
     async for dialog in client11.iter_dialogs():
         if(dialog.id < 0):
@@ -275,8 +282,8 @@ def init2():
         client8.loop.run_until_complete(main8())
 
 def init3():
-    # with client1:
-    #     client1.loop.run_until_complete(main1())
+    with client1:
+        client1.loop.run_until_complete(main1())
     with client11:
         client11.loop.run_until_complete(main11())
 schedule.every().hour.do(init)
