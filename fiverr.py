@@ -361,7 +361,35 @@ schedule.every(45).minutes.do(init3)
 
 while True:
     try:
-        schedule.run_pending()
+        # schedule.run_pending()
+        with client1:
+            client1.loop.run_until_complete(main1())
+        with client2:
+            client2.loop.run_until_complete(main2())
+        with client3:
+            client3.loop.run_until_complete(main3())
+        
+        
+        with client6:
+            client6.loop.run_until_complete(main6())
+        with client5:
+            client5.loop.run_until_complete(main5())
+        with client7:
+            client7.loop.run_until_complete(main7())
+
+        with client4:
+            client4.loop.run_until_complete(main4())
+        
+        with client9:
+            client9.loop.run_until_complete(main9())
+        with client10:
+            client10.loop.run_until_complete(main10())
+        with client8:
+            client8.loop.run_until_complete(main8())
+        with client1:
+            client1.loop.run_until_complete(main1())
+        with client11:
+            client11.loop.run_until_complete(main11())
     except Exception as er:
         print(er)
     
