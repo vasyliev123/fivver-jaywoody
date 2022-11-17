@@ -364,6 +364,8 @@ while True:
         schedule.run_pending()
         # with client1:
         #     client1.loop.run_until_complete(main1())
+        with client1:
+            client1.loop.run_until_complete(main1())
         with client2:
             client2.loop.run_until_complete(main2())
         with client3:
@@ -386,8 +388,7 @@ while True:
             client10.loop.run_until_complete(main10())
         with client8:
             client8.loop.run_until_complete(main8())
-        with client1:
-            client1.loop.run_until_complete(main1())
+        
         with client11:
             client11.loop.run_until_complete(main11())
     except Exception as er:
