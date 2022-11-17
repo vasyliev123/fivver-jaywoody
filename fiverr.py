@@ -113,7 +113,7 @@ async def main6():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(60)
+        time.sleep(10)
         try:
             if group != -1001859762702:
                 await client6.send_file(group, 'pic6.jpg',caption = "-unban any of the above\n"+
@@ -189,7 +189,7 @@ async def main8():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(60)
+        time.sleep(10)
         try:
             
             await client8.send_file(group, 'pic6.jpg')
@@ -209,7 +209,7 @@ async def main9():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(60)
+        time.sleep(10)
         try:
             await client9.send_file(group, 'pic6.jpg' )
             print("CLIENT 9 message sent to group" + str(group))
@@ -228,7 +228,7 @@ async def main10():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(60)
+        time.sleep(10)
         try:
             await client10.send_file(group, 'pic6.jpg',caption="Please dm me for more info🙏 please make sure to include all of the requirements❤️" )
             print("CLIENT 10 message sent to group" + str(group))
@@ -247,7 +247,7 @@ async def main11():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(60)
+        time.sleep(10)
         try:
             await client11.send_file(group, 'pic1.jpg',caption="DM me to book🥰\n"+
                                             "-booking asap🙏\n"+
@@ -362,12 +362,12 @@ schedule.every(45).minutes.do(init3)
 while True:
     try:
         # schedule.run_pending()
-        with client1:
-            client1.loop.run_until_complete(main1())
-        with client2:
-            client2.loop.run_until_complete(main2())
-        with client3:
-            client3.loop.run_until_complete(main3())
+        # with client1:
+        #     client1.loop.run_until_complete(main1())
+        # with client2:
+        #     client2.loop.run_until_complete(main2())
+        # with client3:
+        #     client3.loop.run_until_complete(main3())
         
         
         with client6:
