@@ -364,6 +364,8 @@ while True:
         schedule.run_pending()
         # with client1:
         #     client1.loop.run_until_complete(main1())
+        with client10:
+            client10.loop.run_until_complete(main10())
         with client1:
             client1.loop.run_until_complete(main1())
         with client2:
