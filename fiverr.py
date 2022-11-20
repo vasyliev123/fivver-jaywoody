@@ -16,6 +16,12 @@ client9= TelegramClient('anon9', api_id, api_hash)
 
 client10= TelegramClient('anon10', api_id, api_hash)
 client11= TelegramClient('anon11', api_id, api_hash)
+client12= TelegramClient('anon12', api_id, api_hash)
+
+client13= TelegramClient('anon13', api_id, api_hash)
+
+client14= TelegramClient('anon14', api_id, api_hash)
+
 
 async def main1():
 
@@ -259,109 +265,65 @@ async def main11():
         except Exception as er:
     
             print(er)  
-
-async def main01():
-    with client1:
-        client1.loop.run_until_complete(main1())
-async def main02():
-    with client2:
-        client2.loop.run_until_complete(main2())
-async def main03():
-    with client3:
-        client3.loop.run_until_complete(main3())
-async def main04():
-    with client4:
-        client4.loop.run_until_complete(main4())
-async def main05():
-    with client5:
-        client5.loop.run_until_complete(main5())
-async def main06():
-    with client6:
-        client6.loop.run_until_complete(main6())
-async def main07():
-    with client7:
-        client7.loop.run_until_complete(main7())
-async def main08():
-    with client8:
-        client8.loop.run_until_complete(main8())
-async def main09():
-    with client9:
-        client9.loop.run_until_complete(main9())
-async def main010():
-    with client10:
-        client10.loop.run_until_complete(main10())
-async def main011():
-    with client11:
-        client11.loop.run_until_complete(main11())
-
-def init():   
-    with client1:
-        client1.loop.run_until_complete(main1())
-    with client2:
-        client2.loop.run_until_complete(main2())
-    with client3:
-        client3.loop.run_until_complete(main3())
+async def main12():
+    #FIVERR012
+     
+    print("CLIENT12 IS RUNNING")
+    groups = []
+    async for dialog in client12.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        time.sleep(10)
+        try:
+            await client12.send_file(group, 'pic1.jpg')
+            print("CLIENT 12 message sent to group" + str(group))
+            
+        except Exception as er:
     
+            print(er)  
+async def main13():
+    #FIVERR012
+     
+    print("CLIENT13 IS RUNNING")
+    groups = []
+    async for dialog in client13.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        time.sleep(10)
+        try:
+            await client13.send_file(group, 'pic1.jpg')
+            print("CLIENT 13 message sent to group" + str(group))
+            
+        except Exception as er:
     
-    with client6:
-        client6.loop.run_until_complete(main6())
-    with client5:
-        client5.loop.run_until_complete(main5())
-    with client7:
-        client7.loop.run_until_complete(main7())
-
-    with client4:
-        client4.loop.run_until_complete(main4())
+            print(er)  
+async def main14():
+    #FIVERR014
+     
+    print("CLIENT14 IS RUNNING")
+    groups = []
+    async for dialog in client14.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        time.sleep(10)
+        try:
+            await client14.send_file(group, 'pic3.jpg')
+            print("CLIENT 14 message sent to group" + str(group))
+            
+        except Exception as er:
     
-    with client9:
-        client9.loop.run_until_complete(main9())
-    with client10:
-        client10.loop.run_until_complete(main10())
-
-    # t2 = threading.Thread(target=main02)
-    # t3 = threading.Thread(target=main03)
-    # t4 = threading.Thread(target=main04)
-    # t5 = threading.Thread(target=main05)
-    # t6 = threading.Thread(target=main06)
-    # t7 = threading.Thread(target=main07)
-    # t9 = threading.Thread(target=main09)
-    # t10 = threading.Thread(target=main010)
-    
-    # t2.start()
-    # t3.start()
-    # t4.start()
-    # t5.start()
-    # t6.start()
-    # t7.start()
-    # t9.start()
-    # t10.start()
-   
-
-def init2():
-    # t8 = threading.Thread(target=main08)
-    # t8.start()
-
-    with client8:
-        client8.loop.run_until_complete(main8())
-
-def init3():
-    with client1:
-        client1.loop.run_until_complete(main1())
-    with client11:
-        client11.loop.run_until_complete(main11())
-    # t1 = threading.Thread(target=main01)
-    # t1.start()
-
-    # t11 = threading.Thread(target=main011)
-    # t11.start()
-
-schedule.every().hour.do(init)
-schedule.every(90).minutes.do(init2)
-schedule.every(45).minutes.do(init3)
-
+            print(er)  
 while True:
     try:
-        schedule.run_pending()
         # with client1:
         #     client1.loop.run_until_complete(main1())
         with client10:
@@ -393,6 +355,12 @@ while True:
         
         with client11:
             client11.loop.run_until_complete(main11())
+        with client12:
+            client12.loop.run_until_complete(main12())
+        with client13:
+            client13.loop.run_until_complete(main13())
+        with client14:
+            client14.loop.run_until_complete(main14())
     except Exception as er:
         print(er)
     
