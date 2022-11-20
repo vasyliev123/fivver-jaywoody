@@ -276,7 +276,7 @@ async def main12():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(20)
+        time.sleep(25)
         try:
             await client12.send_file(group, 'pic1.jpg')
             print("CLIENT 12 message sent to group" + str(group))
@@ -314,7 +314,7 @@ async def main14():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(20)
+        time.sleep(25)
         try:
             await client14.send_file(group, 'pic3.jpg')
             print("CLIENT 14 message sent to group" + str(group))
