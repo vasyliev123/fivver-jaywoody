@@ -253,7 +253,7 @@ async def main11():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(10)
+        time.sleep(20)
         try:
             await client11.send_file(group, 'pic1.jpg',caption="DM me to book🥰\n"+
                                             "-booking asap🙏\n"+
@@ -276,7 +276,7 @@ async def main12():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(10)
+        time.sleep(20)
         try:
             await client12.send_file(group, 'pic1.jpg')
             print("CLIENT 12 message sent to group" + str(group))
@@ -295,7 +295,7 @@ async def main13():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(10)
+        time.sleep(20)
         try:
             await client13.send_file(group, 'pic1.jpg')
             print("CLIENT 13 message sent to group" + str(group))
@@ -314,7 +314,7 @@ async def main14():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(10)
+        time.sleep(20)
         try:
             await client14.send_file(group, 'pic3.jpg')
             print("CLIENT 14 message sent to group" + str(group))
@@ -326,6 +326,12 @@ while True:
     try:
         # with client1:
         #     client1.loop.run_until_complete(main1())
+        with client12:
+            client12.loop.run_until_complete(main12())
+        with client13:
+            client13.loop.run_until_complete(main13())
+        with client14:
+            client14.loop.run_until_complete(main14())
         with client10:
             client10.loop.run_until_complete(main10())
         with client1:
@@ -355,12 +361,7 @@ while True:
         
         with client11:
             client11.loop.run_until_complete(main11())
-        with client12:
-            client12.loop.run_until_complete(main12())
-        with client13:
-            client13.loop.run_until_complete(main13())
-        with client14:
-            client14.loop.run_until_complete(main14())
+        
     except Exception as er:
         print(er)
     
