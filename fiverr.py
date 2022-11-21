@@ -122,16 +122,7 @@ async def main6():
         time.sleep(20)
         try:
             if group != -1001859762702:
-                await client6.send_file(group, 'pic6.jpg',caption = "-unban any of the above\n"+
-                "-Most fair prices ‼️\n"+
-                "-quick services⚡️\n"+
-                "-100% guaranteed or money back✅\n"+
-                "\n"+
-                "Requirements\n"+
-                "-send all info including @\n"+
-                "-reason for ban\n"+
-                "-screenshots of log in page\n"+
-                "-followers count etc")
+                await client6.send_file(group, 'pic3.jpg')
                 print("CLIENT 6 message sent to group" + str(group))
                  
         except Exception as er:
