@@ -225,7 +225,7 @@ async def main10():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(20)
+        time.sleep(25)
         try:
             await client10.send_file(group, 'pic6.jpg',caption="Please dm me for more info🙏 please make sure to include all of the requirements❤️" )
             print("CLIENT 10 message sent to group" + str(group))
@@ -244,7 +244,7 @@ async def main11():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(20)
+        time.sleep(10)
         try:
             await client11.send_file(group, 'pic1.jpg',caption="DM me to book🥰\n"+
                                             "-booking asap🙏\n"+
@@ -286,7 +286,7 @@ async def main13():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(20)
+        time.sleep(10)
         try:
             await client13.send_file(group, 'pic1.jpg')
             print("CLIENT 13 message sent to group" + str(group))
@@ -355,7 +355,7 @@ while True:
         
     except Exception as er:
         print(er)
-    
+
     time.sleep(1)
 
 #1  778 788 0215
