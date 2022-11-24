@@ -21,6 +21,7 @@ client12= TelegramClient('anon12', api_id, api_hash)
 client13= TelegramClient('anon13', api_id, api_hash)
 
 client14= TelegramClient('anon14', api_id, api_hash)
+client15= TelegramClient('anon15', api_id, api_hash)
 
 
 async def main1():
@@ -225,7 +226,7 @@ async def main10():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(25)
+        time.sleep(45)
         try:
             await client10.send_file(group, 'pic6.jpg',caption="Please dm me for more info🙏 please make sure to include all of the requirements❤️" )
             print("CLIENT 10 message sent to group" + str(group))
@@ -244,7 +245,7 @@ async def main11():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(10)
+        time.sleep(20)
         try:
             await client11.send_file(group, 'pic1.jpg',caption="DM me to book🥰\n"+
                                             "-booking asap🙏\n"+
@@ -267,7 +268,7 @@ async def main12():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(25)
+        time.sleep(45)
         try:
             await client12.send_file(group, 'pic1.jpg')
             print("CLIENT 12 message sent to group" + str(group))
@@ -305,10 +306,38 @@ async def main14():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(25)
+        time.sleep(45)
         try:
             await client14.send_file(group, 'pic3.jpg')
             print("CLIENT 14 message sent to group" + str(group))
+            
+        except Exception as er:
+    
+            print(er)  
+async def main15():
+    #FIVERR014
+     
+    print("CLIENT15 IS RUNNING")
+    groups = []
+    async for dialog in client15.iter_dialogs():
+        if(dialog.id < 0):
+                print(dialog.name)
+                groups.append(dialog.id)
+    print(groups)      
+    for group in groups:
+        time.sleep(25)
+        try:
+            await client15.send_file(group, 'pic3.jpg', caption="-quality fans ⚡️\n"+
+                                                            "-Grown from socials and ads🔥\n"+
+                                                            "-exposed to over 70k fans🤩\n"+
+                                                            "Dm me @Baddiprincess to book ✅\n"+
+                                                            "\n"+
+                                                            "@Baddiprincess❤️‍🔥\n"+
+                                                            "\n"+
+                                                            "@Baddiprincess❤️‍🔥\n"+
+                                                            "\n"+     
+                                                            "@Baddiprincess❤️‍🔥")
+            print("CLIENT 15 message sent to group" + str(group))
             
         except Exception as er:
     
@@ -317,6 +346,8 @@ while True:
     try:
         # with client1:
         #     client1.loop.run_until_complete(main1())
+        with client15:
+            client15.loop.run_until_complete(main15())
         with client12:
             client12.loop.run_until_complete(main12())
         with client13:
@@ -368,3 +399,7 @@ while True:
 #8  276 258 9713
 #9  716 815 6028
 #10 213 486 3565
+#12 702 605 8825
+#13 737 320 3283
+#14 323 739 1651
+
