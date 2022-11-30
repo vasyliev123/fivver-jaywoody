@@ -122,7 +122,8 @@ async def main6():
     for group in groups:
         time.sleep(20)
         try:
-            if group != -1001859762702:
+
+            if group != -1001859762702 and group != -1001783222691:
                 await client6.send_file(group, 'pic3.jpg')
                 print("CLIENT 6 message sent to group" + str(group))
                  
@@ -226,11 +227,19 @@ async def main10():
                 groups.append(dialog.id)
     print(groups)      
     for group in groups:
-        time.sleep(45)
+        time.sleep(1)
         try:
-            await client10.send_file(group, 'pic6.jpg',caption="Please dm me for more info🙏 please make sure to include all of the requirements❤️" )
+            await client10.send_message(group, 
+            "💰 ONLYFANS MANAGEMENT 💰\n"+
+            "we are looking for new models for OF management. We work with girls 1% and lower.\n"+
+            "\n"+
+            "We will do FULL PAGE management such as handling PPV Messages and S4S etc as well as advertising. Please\n"+
+            "\n"+
+            "Proof of work can be shown ✅\n"+
+            "Only take a small % 💵\n"+
+            "Over 2 years experience with 1% and lower models 🔥\n"+
+            "DM me if you have any questions 💜")
             print("CLIENT 10 message sent to group" + str(group))
-            
         except Exception as er:
     
             print(er)   
@@ -376,7 +385,7 @@ while True:
         with client7:
             client7.loop.run_until_complete(main7())
 
-        with client4:
+        with client4:       
             client4.loop.run_until_complete(main4())
         
         with client9:
